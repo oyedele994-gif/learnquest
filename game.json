@@ -18,9 +18,9 @@
     "scaleMode": "linear",
     "sizeOnStartupMode": "",
     "templateSlug": "starting-top-down",
-    "version": "1.8.0",
+    "version": "1.8.1",
     "name": "LEARNQUEST",
-    "description": "LEARNQUEST polished Knowledge Village UI: cleaner exploration layout, staged visual rewards and portal visibility.",
+    "description": "LEARNQUEST visual cleanup: player artwork enabled, starter obstacles hidden, labels removed and controls resized.",
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
@@ -338,16 +338,16 @@
       "instances": [
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 64,
           "keepRatio": true,
           "layer": "",
           "name": "Player",
           "persistentUuid": "ebd4e918-fdc8-4c06-baef-2e0f46c2cfd5",
-          "width": 0,
+          "width": 64,
           "x": 608,
           "y": 328,
-          "zOrder": 1,
+          "zOrder": 35,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -552,16 +552,16 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 105,
           "keepRatio": true,
           "layer": "MobileControls",
           "locked": true,
           "name": "MoveJoystick",
           "persistentUuid": "b0c31bb4-0add-4dda-9367-c5136e4b118d",
-          "width": 0,
-          "x": 176,
-          "y": 576,
+          "width": 105,
+          "x": 70,
+          "y": 565,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -674,7 +674,7 @@
           "persistentUuid": "687d8dac-1b15-40be-9746-c4dfb3d06f46",
           "width": 0,
           "x": 360,
-          "y": 675,
+          "y": 645,
           "zOrder": 100,
           "numberProperties": [],
           "stringProperties": [],
@@ -1004,15 +1004,15 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 155,
+          "height": 145,
           "keepRatio": true,
           "layer": "",
           "locked": false,
           "name": "MentorAdaArt",
           "persistentUuid": "visual-Knowledge Village-MentorAdaArt",
-          "width": 130,
-          "x": 90,
-          "y": 265,
+          "width": 120,
+          "x": 110,
+          "y": 285,
           "zOrder": 28,
           "numberProperties": [],
           "stringProperties": [],
@@ -1021,15 +1021,15 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 130,
+          "height": 120,
           "keepRatio": true,
           "layer": "",
           "locked": false,
           "name": "BridgeArt",
           "persistentUuid": "visual-Knowledge Village-BridgeArt",
-          "width": 220,
-          "x": 890,
-          "y": 300,
+          "width": 210,
+          "x": 900,
+          "y": 315,
           "zOrder": 27,
           "numberProperties": [],
           "stringProperties": [],
@@ -1167,7 +1167,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\StartingPlayer.png",
+                      "image": "player.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -2404,6 +2404,46 @@
               },
               "parameters": [
                 "NumberPortalArt"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Hide"
+              },
+              "parameters": [
+                "Plant_Obstacle"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Hide"
+              },
+              "parameters": [
+                "Wall_Obstacle"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Hide"
+              },
+              "parameters": [
+                "Mentor"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Hide"
+              },
+              "parameters": [
+                "Bridge"
               ],
               "subInstructions": []
             }
