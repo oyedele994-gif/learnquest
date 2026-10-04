@@ -18,9 +18,9 @@
     "scaleMode": "linear",
     "sizeOnStartupMode": "",
     "templateSlug": "starting-top-down",
-    "version": "1.3.0",
+    "version": "1.4.0",
     "name": "LEARNQUEST",
-    "description": "LEARNQUEST educational adventure game - Knowledge Village with three missions, rewards, badges and collectible treasure.",
+    "description": "LEARNQUEST educational adventure game - Knowledge Village complete with exploration NPCs, secrets, collectibles and Number Valley portal.",
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
@@ -212,6 +212,21 @@
         },
         {
           "name": "TreasureCollected",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "LibraryVisited",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "PuzzleStoneFound",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "NumberValleyUnlocked",
           "type": "boolean",
           "value": false
         }
@@ -797,6 +812,70 @@
           "x": 430,
           "y": 620,
           "zOrder": 104,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "LibraryNPC",
+          "persistentUuid": "learnquest-librarynpc-v14",
+          "width": 0,
+          "x": 120,
+          "y": 470,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "PuzzleStone",
+          "persistentUuid": "learnquest-puzzlestone-v14",
+          "width": 0,
+          "x": 1040,
+          "y": 500,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "NumberValleyPortal",
+          "persistentUuid": "learnquest-numbervalleyportal-v14",
+          "width": 0,
+          "x": 860,
+          "y": 100,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "locked": false,
+          "name": "ExploreFeedback",
+          "persistentUuid": "learnquest-explorefeedback-v14",
+          "width": 0,
+          "x": 350,
+          "y": 650,
+          "zOrder": 105,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1553,6 +1632,86 @@
             "g": 70,
             "b": 120
           }
+        },
+        {
+          "bold": true,
+          "italic": false,
+          "name": "LibraryNPC",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "📚 LIBRARIAN LEO\nTap to explore the village library",
+          "font": "",
+          "characterSize": 24,
+          "color": {
+            "r": 50,
+            "g": 45,
+            "b": 80
+          }
+        },
+        {
+          "bold": true,
+          "italic": false,
+          "name": "PuzzleStone",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "🧩 PUZZLE STONE\nTap to inspect",
+          "font": "",
+          "characterSize": 24,
+          "color": {
+            "r": 75,
+            "g": 65,
+            "b": 55
+          }
+        },
+        {
+          "bold": true,
+          "italic": false,
+          "name": "NumberValleyPortal",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "🔢 NUMBER VALLEY PORTAL\nLocked — complete Knowledge Village",
+          "font": "",
+          "characterSize": 28,
+          "color": {
+            "r": 45,
+            "g": 65,
+            "b": 125
+          }
+        },
+        {
+          "bold": true,
+          "italic": false,
+          "name": "ExploreFeedback",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Explore Knowledge Village and discover its secrets.",
+          "font": "",
+          "characterSize": 22,
+          "color": {
+            "r": 60,
+            "g": 60,
+            "b": 60
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -1771,6 +1930,46 @@
               },
               "parameters": [
                 "WorldProgress"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Hide"
+              },
+              "parameters": [
+                "LibraryNPC"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Hide"
+              },
+              "parameters": [
+                "PuzzleStone"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Hide"
+              },
+              "parameters": [
+                "NumberValleyPortal"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Hide"
+              },
+              "parameters": [
+                "ExploreFeedback"
               ],
               "subInstructions": []
             }
@@ -3255,6 +3454,46 @@
                 "WorldProgress"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Show"
+              },
+              "parameters": [
+                "LibraryNPC"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Show"
+              },
+              "parameters": [
+                "PuzzleStone"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Show"
+              },
+              "parameters": [
+                "NumberValleyPortal"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Show"
+              },
+              "parameters": [
+                "ExploreFeedback"
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -3545,6 +3784,312 @@
                 "Feedback",
                 "=",
                 "\"Knowledge Village complete! You found the hidden treasure.\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "IsCursorOnObject"
+              },
+              "parameters": [
+                "LibraryNPC",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonReleased"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "MissionNumber",
+                "=",
+                "3"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "LibraryVisited",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "LibraryVisited",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "XP",
+                "+",
+                "25"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "HUD",
+                "=",
+                "\"⭐ XP: 325     🪙 Coins: 100\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "ExploreFeedback",
+                "=",
+                "\"Librarian Leo: Knowledge grows when you explore. +25 XP!\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "IsCursorOnObject"
+              },
+              "parameters": [
+                "PuzzleStone",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonReleased"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "MissionNumber",
+                "=",
+                "3"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "PuzzleStoneFound",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "PuzzleStoneFound",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "Coins",
+                "+",
+                "25"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "HUD",
+                "=",
+                "\"⭐ XP: 325     🪙 Coins: 125\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "ExploreFeedback",
+                "=",
+                "\"Secret Puzzle Stone discovered! +25 coins.\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "PuzzleStone",
+                "=",
+                "\"🧩 PUZZLE STONE ✓\\nSecret discovered!\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "IsCursorOnObject"
+              },
+              "parameters": [
+                "NumberValleyPortal",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonReleased"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "MissionNumber",
+                "=",
+                "3"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "NumberValleyUnlocked",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "NumberValleyPortal",
+                "=",
+                "\"🔢 NUMBER VALLEY PORTAL ✓\\nNEXT WORLD UNLOCKED\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "ExploreFeedback",
+                "=",
+                "\"Number Valley is unlocked! Your next adventure awaits.\""
               ],
               "subInstructions": []
             }
