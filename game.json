@@ -18,9 +18,9 @@
     "scaleMode": "linear",
     "sizeOnStartupMode": "",
     "templateSlug": "starting-top-down",
-    "version": "1.6.0",
+    "version": "1.7.0",
     "name": "LEARNQUEST",
-    "description": "LEARNQUEST adventure game with connected Knowledge Village and Number Valley, crystal quest and Number Gate boss challenge.",
+    "description": "LEARNQUEST visual upgrade: Knowledge Village and Number Valley now use custom illustrated game assets.",
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
@@ -146,6 +146,110 @@
         "name": "assets/StartingWall.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "badges.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "badges.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "bridge.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bridge.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "crystals.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "crystals.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "guide_nia.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "guide_nia.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "hud.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "hud.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "knowledge_village_background.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "knowledge_village_background.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "learnquest_logo.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "learnquest_logo.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "mentor_ada.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "mentor_ada.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "number_valley_background.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "number_valley_background.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "number_valley_portal.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "number_valley_portal.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "player.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "player.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "quiz_panel.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "quiz_panel.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "treasure_chest.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "treasure_chest.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ]
   },
@@ -876,6 +980,91 @@
           "x": 350,
           "y": 650,
           "zOrder": 105,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 720,
+          "keepRatio": true,
+          "layer": "",
+          "locked": false,
+          "name": "KVBackgroundArt",
+          "persistentUuid": "visual-Knowledge Village-KVBackgroundArt",
+          "width": 1280,
+          "x": 0,
+          "y": 0,
+          "zOrder": -10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 180,
+          "keepRatio": true,
+          "layer": "",
+          "locked": false,
+          "name": "MentorAdaArt",
+          "persistentUuid": "visual-Knowledge Village-MentorAdaArt",
+          "width": 150,
+          "x": 110,
+          "y": 170,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 150,
+          "keepRatio": true,
+          "layer": "",
+          "locked": false,
+          "name": "BridgeArt",
+          "persistentUuid": "visual-Knowledge Village-BridgeArt",
+          "width": 250,
+          "x": 880,
+          "y": 250,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 120,
+          "keepRatio": true,
+          "layer": "",
+          "locked": false,
+          "name": "TreasureArt",
+          "persistentUuid": "visual-Knowledge Village-TreasureArt",
+          "width": 190,
+          "x": 820,
+          "y": 430,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 180,
+          "keepRatio": true,
+          "layer": "",
+          "locked": false,
+          "name": "NumberPortalArt",
+          "persistentUuid": "visual-Knowledge Village-NumberPortalArt",
+          "width": 180,
+          "x": 1010,
+          "y": 90,
+          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1712,6 +1901,211 @@
             "g": 60,
             "b": 60
           }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "KVBackgroundArt",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "knowledge_village_background.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "MentorAdaArt",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "mentor_ada.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "BridgeArt",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "bridge.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "TreasureArt",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "treasure_chest.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "NumberPortalArt",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "number_valley_portal.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -4795,6 +5189,74 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 720,
+          "keepRatio": true,
+          "layer": "",
+          "locked": false,
+          "name": "NVBackgroundArt",
+          "persistentUuid": "visual-Number Valley-NVBackgroundArt",
+          "width": 1280,
+          "x": 0,
+          "y": 0,
+          "zOrder": -10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 180,
+          "keepRatio": true,
+          "layer": "",
+          "locked": false,
+          "name": "GuideNiaArt",
+          "persistentUuid": "visual-Number Valley-GuideNiaArt",
+          "width": 150,
+          "x": 120,
+          "y": 170,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 120,
+          "keepRatio": true,
+          "layer": "",
+          "locked": false,
+          "name": "CrystalArt",
+          "persistentUuid": "visual-Number Valley-CrystalArt",
+          "width": 230,
+          "x": 760,
+          "y": 280,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 180,
+          "keepRatio": true,
+          "layer": "",
+          "locked": false,
+          "name": "NumberPortalArt",
+          "persistentUuid": "visual-Number Valley-NumberPortalArt",
+          "width": 180,
+          "x": 950,
+          "y": 90,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -5468,6 +5930,170 @@
             "g": 85,
             "b": 10
           }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "NVBackgroundArt",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "number_valley_background.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "GuideNiaArt",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "guide_nia.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "CrystalArt",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "crystals.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "NumberPortalArt",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "number_valley_portal.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
