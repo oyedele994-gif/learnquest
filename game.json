@@ -18,9 +18,9 @@
     "scaleMode": "linear",
     "sizeOnStartupMode": "",
     "templateSlug": "starting-top-down",
-    "version": "1.8.2",
+    "version": "1.9.0",
     "name": "LEARNQUEST",
-    "description": "LEARNQUEST interaction fix: Mentor Ada artwork is clickable; player restored to a clean single-character sprite while custom sheet is prepared for animation.",
+    "description": "LEARNQUEST mission UI redesign: centered quiz panel, cleaner typography and staged mission interface.",
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
@@ -673,8 +673,8 @@
           "name": "Instructions",
           "persistentUuid": "687d8dac-1b15-40be-9746-c4dfb3d06f46",
           "width": 0,
-          "x": 395,
-          "y": 650,
+          "x": 430,
+          "y": 665,
           "zOrder": 100,
           "numberProperties": [],
           "stringProperties": [],
@@ -689,8 +689,8 @@
           "name": "MissionPrompt",
           "persistentUuid": "9f4578db-5f9c-4932-81ab-bd3d31b8cfd9",
           "width": 0,
-          "x": 430,
-          "y": 105,
+          "x": 410,
+          "y": 145,
           "zOrder": 101,
           "numberProperties": [],
           "stringProperties": [],
@@ -705,8 +705,8 @@
           "name": "Question",
           "persistentUuid": "6c17b7dc-6949-47d6-828c-b10e8248e69b",
           "width": 0,
-          "x": 440,
-          "y": 165,
+          "x": 420,
+          "y": 205,
           "zOrder": 101,
           "numberProperties": [],
           "stringProperties": [],
@@ -721,8 +721,8 @@
           "name": "AnswerA",
           "persistentUuid": "81c0f540-1c49-4ce2-a424-17e7cf95793f",
           "width": 0,
-          "x": 455,
-          "y": 235,
+          "x": 430,
+          "y": 275,
           "zOrder": 101,
           "numberProperties": [],
           "stringProperties": [],
@@ -737,8 +737,8 @@
           "name": "AnswerB",
           "persistentUuid": "ee33945f-1cfd-4c9e-94dc-e6127f7072b2",
           "width": 0,
-          "x": 455,
-          "y": 285,
+          "x": 430,
+          "y": 325,
           "zOrder": 101,
           "numberProperties": [],
           "stringProperties": [],
@@ -753,8 +753,8 @@
           "name": "AnswerC",
           "persistentUuid": "ce8ec0d8-906e-4e17-8619-5537dbbd13f4",
           "width": 0,
-          "x": 700,
-          "y": 235,
+          "x": 690,
+          "y": 275,
           "zOrder": 101,
           "numberProperties": [],
           "stringProperties": [],
@@ -769,8 +769,8 @@
           "name": "AnswerD",
           "persistentUuid": "e5a27e9f-e620-4e8b-8e24-42e6f71659d6",
           "width": 0,
-          "x": 700,
-          "y": 285,
+          "x": 690,
+          "y": 325,
           "zOrder": 101,
           "numberProperties": [],
           "stringProperties": [],
@@ -785,8 +785,8 @@
           "name": "Feedback",
           "persistentUuid": "bc956ff0-f2d9-469c-8d70-018e983c3a8c",
           "width": 0,
-          "x": 430,
-          "y": 345,
+          "x": 420,
+          "y": 385,
           "zOrder": 101,
           "numberProperties": [],
           "stringProperties": [],
@@ -801,8 +801,8 @@
           "name": "Badge",
           "persistentUuid": "ed7bdec6-a7a1-4229-9092-75a2081e006e",
           "width": 0,
-          "x": 450,
-          "y": 395,
+          "x": 430,
+          "y": 425,
           "zOrder": 101,
           "numberProperties": [],
           "stringProperties": [],
@@ -817,8 +817,8 @@
           "name": "NextMission",
           "persistentUuid": "learnquest-nextmission-m2",
           "width": 0,
-          "x": 525,
-          "y": 445,
+          "x": 500,
+          "y": 465,
           "zOrder": 102,
           "numberProperties": [],
           "stringProperties": [],
@@ -833,8 +833,8 @@
           "name": "Mission2Info",
           "persistentUuid": "learnquest-mission2info-m2",
           "width": 0,
-          "x": 450,
-          "y": 485,
+          "x": 410,
+          "y": 145,
           "zOrder": 102,
           "numberProperties": [],
           "stringProperties": [],
@@ -849,8 +849,8 @@
           "name": "NextMission3",
           "persistentUuid": "learnquest-nextmission3-m3",
           "width": 0,
-          "x": 525,
-          "y": 445,
+          "x": 500,
+          "y": 465,
           "zOrder": 103,
           "numberProperties": [],
           "stringProperties": [],
@@ -865,8 +865,8 @@
           "name": "Mission3Info",
           "persistentUuid": "learnquest-mission3info-m3",
           "width": 0,
-          "x": 450,
-          "y": 485,
+          "x": 410,
+          "y": 145,
           "zOrder": 103,
           "numberProperties": [],
           "stringProperties": [],
@@ -1065,6 +1065,23 @@
           "x": 1030,
           "y": 175,
           "zOrder": 29,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 390,
+          "keepRatio": false,
+          "layer": "UI",
+          "locked": false,
+          "name": "QuizPanelArt",
+          "persistentUuid": "learnquest-quiz-panel-v181",
+          "width": 720,
+          "x": 280,
+          "y": 115,
+          "zOrder": 100,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1515,7 +1532,7 @@
           "behaviors": [],
           "string": "MISSION: REPAIR THE BROKEN BRIDGE",
           "font": "",
-          "characterSize": 30,
+          "characterSize": 26,
           "color": {
             "r": 80,
             "g": 45,
@@ -1535,7 +1552,7 @@
           "behaviors": [],
           "string": "What is 25 × 4?",
           "font": "",
-          "characterSize": 38,
+          "characterSize": 32,
           "color": {
             "r": 20,
             "g": 20,
@@ -1555,7 +1572,7 @@
           "behaviors": [],
           "string": "A. 75",
           "font": "",
-          "characterSize": 30,
+          "characterSize": 26,
           "color": {
             "r": 35,
             "g": 35,
@@ -1575,7 +1592,7 @@
           "behaviors": [],
           "string": "B. 90",
           "font": "",
-          "characterSize": 30,
+          "characterSize": 26,
           "color": {
             "r": 35,
             "g": 35,
@@ -1595,7 +1612,7 @@
           "behaviors": [],
           "string": "C. 100",
           "font": "",
-          "characterSize": 30,
+          "characterSize": 26,
           "color": {
             "r": 25,
             "g": 100,
@@ -1615,7 +1632,7 @@
           "behaviors": [],
           "string": "D. 125",
           "font": "",
-          "characterSize": 30,
+          "characterSize": 26,
           "color": {
             "r": 35,
             "g": 35,
@@ -1655,7 +1672,7 @@
           "behaviors": [],
           "string": "",
           "font": "",
-          "characterSize": 28,
+          "characterSize": 26,
           "color": {
             "r": 125,
             "g": 85,
@@ -1695,7 +1712,7 @@
           "behaviors": [],
           "string": "CONTINUE TO MISSION 2",
           "font": "",
-          "characterSize": 28,
+          "characterSize": 26,
           "color": {
             "r": 20,
             "g": 95,
@@ -1715,7 +1732,7 @@
           "behaviors": [],
           "string": "MISSION 2: THE WISDOM GATE",
           "font": "",
-          "characterSize": 30,
+          "characterSize": 26,
           "color": {
             "r": 70,
             "g": 40,
@@ -1735,7 +1752,7 @@
           "behaviors": [],
           "string": "CONTINUE TO MISSION 3",
           "font": "",
-          "characterSize": 28,
+          "characterSize": 26,
           "color": {
             "r": 20,
             "g": 95,
@@ -1755,7 +1772,7 @@
           "behaviors": [],
           "string": "MISSION 3: THE LANGUAGE FOREST",
           "font": "",
-          "characterSize": 30,
+          "characterSize": 26,
           "color": {
             "r": 70,
             "g": 40,
@@ -2087,6 +2104,47 @@
                     {
                       "hasCustomCollisionMask": false,
                       "image": "number_valley_portal.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "QuizPanelArt",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "quiz_panel.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -2446,6 +2504,16 @@
                 "Bridge"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Hide"
+              },
+              "parameters": [
+                "QuizPanelArt"
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -2481,6 +2549,16 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Show"
+              },
+              "parameters": [
+                "QuizPanelArt"
+              ],
+              "subInstructions": []
+            },
             {
               "type": {
                 "inverted": false,
@@ -2913,6 +2991,16 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Show"
+              },
+              "parameters": [
+                "QuizPanelArt"
+              ],
+              "subInstructions": []
+            },
             {
               "type": {
                 "inverted": false,
@@ -3521,6 +3609,16 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Show"
+              },
+              "parameters": [
+                "QuizPanelArt"
+              ],
+              "subInstructions": []
+            },
             {
               "type": {
                 "inverted": false,
