@@ -18,9 +18,9 @@
     "scaleMode": "linear",
     "sizeOnStartupMode": "",
     "templateSlug": "starting-top-down",
-    "version": "1.2.0",
+    "version": "1.3.0",
     "name": "LEARNQUEST",
-    "description": "LEARNQUEST educational adventure game - Knowledge Village prototype. UI spacing refined for mission gameplay.",
+    "description": "LEARNQUEST educational adventure game - Knowledge Village with three missions, rewards, badges and collectible treasure.",
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
@@ -209,6 +209,11 @@
           "name": "MissionNumber",
           "type": "number",
           "value": 1
+        },
+        {
+          "name": "TreasureCollected",
+          "type": "boolean",
+          "value": false
         }
       ],
       "instances": [
@@ -744,6 +749,54 @@
           "x": 400,
           "y": 150,
           "zOrder": 103,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "locked": false,
+          "name": "AdventureUnlocked",
+          "persistentUuid": "learnquest-adventureunlocked-v13",
+          "width": 0,
+          "x": 390,
+          "y": 545,
+          "zOrder": 104,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "locked": false,
+          "name": "Treasure",
+          "persistentUuid": "learnquest-treasure-v13",
+          "width": 0,
+          "x": 820,
+          "y": 450,
+          "zOrder": 104,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "locked": false,
+          "name": "WorldProgress",
+          "persistentUuid": "learnquest-worldprogress-v13",
+          "width": 0,
+          "x": 430,
+          "y": 620,
+          "zOrder": 104,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1440,6 +1493,66 @@
             "g": 40,
             "b": 15
           }
+        },
+        {
+          "bold": true,
+          "italic": false,
+          "name": "AdventureUnlocked",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "🌟 KNOWLEDGE VILLAGE COMPLETE!\nAdventure Zone Unlocked",
+          "font": "",
+          "characterSize": 32,
+          "color": {
+            "r": 20,
+            "g": 100,
+            "b": 45
+          }
+        },
+        {
+          "bold": true,
+          "italic": false,
+          "name": "Treasure",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "🪙 TREASURE CHEST\nTap to collect bonus coins!",
+          "font": "",
+          "characterSize": 26,
+          "color": {
+            "r": 125,
+            "g": 85,
+            "b": 10
+          }
+        },
+        {
+          "bold": true,
+          "italic": false,
+          "name": "WorldProgress",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "WORLD PROGRESS: 3/3 MISSIONS ✓",
+          "font": "",
+          "characterSize": 24,
+          "color": {
+            "r": 35,
+            "g": 70,
+            "b": 120
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -1628,6 +1741,36 @@
               },
               "parameters": [
                 "Mission3Info"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Hide"
+              },
+              "parameters": [
+                "AdventureUnlocked"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Hide"
+              },
+              "parameters": [
+                "Treasure"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Hide"
+              },
+              "parameters": [
+                "WorldProgress"
               ],
               "subInstructions": []
             }
@@ -3082,6 +3225,36 @@
                 "AnswerD"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Show"
+              },
+              "parameters": [
+                "AdventureUnlocked"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Show"
+              },
+              "parameters": [
+                "Treasure"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Show"
+              },
+              "parameters": [
+                "WorldProgress"
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -3254,6 +3427,124 @@
                 "Feedback",
                 "=",
                 "\"Try again. Look carefully at the spelling of BEAUTIFUL.\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "IsCursorOnObject"
+              },
+              "parameters": [
+                "Treasure",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonReleased"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "MissionNumber",
+                "=",
+                "3"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "TreasureCollected",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "Coins",
+                "=",
+                "100"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "TreasureCollected",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "HUD",
+                "=",
+                "\"⭐ XP: 300     🪙 Coins: 100\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "Treasure",
+                "=",
+                "\"✨ TREASURE COLLECTED! +40 COINS\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "Feedback",
+                "=",
+                "\"Knowledge Village complete! You found the hidden treasure.\""
               ],
               "subInstructions": []
             }
