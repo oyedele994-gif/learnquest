@@ -18,9 +18,9 @@
     "scaleMode": "linear",
     "sizeOnStartupMode": "",
     "templateSlug": "starting-top-down",
-    "version": "1.5.0",
+    "version": "1.6.0",
     "name": "LEARNQUEST",
-    "description": "LEARNQUEST educational adventure game with Knowledge Village and Number Valley exploration world.",
+    "description": "LEARNQUEST adventure game with connected Knowledge Village and Number Valley, crystal quest and Number Gate boss challenge.",
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
@@ -4092,6 +4092,18 @@
                 "\"Number Valley is unlocked! Your next adventure awaits.\""
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "Number Valley",
+                ""
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -4655,6 +4667,134 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "locked": false,
+          "name": "BossTitle",
+          "persistentUuid": "learnquest-bosstitle-v16",
+          "width": 0,
+          "x": 410,
+          "y": 150,
+          "zOrder": 110,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "locked": false,
+          "name": "BossQuestion",
+          "persistentUuid": "learnquest-bossquestion-v16",
+          "width": 0,
+          "x": 250,
+          "y": 235,
+          "zOrder": 110,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "locked": false,
+          "name": "BossA",
+          "persistentUuid": "learnquest-bossa-v16",
+          "width": 0,
+          "x": 390,
+          "y": 325,
+          "zOrder": 110,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "locked": false,
+          "name": "BossB",
+          "persistentUuid": "learnquest-bossb-v16",
+          "width": 0,
+          "x": 650,
+          "y": 325,
+          "zOrder": 110,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "locked": false,
+          "name": "BossC",
+          "persistentUuid": "learnquest-bossc-v16",
+          "width": 0,
+          "x": 390,
+          "y": 390,
+          "zOrder": 110,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "locked": false,
+          "name": "BossD",
+          "persistentUuid": "learnquest-bossd-v16",
+          "width": 0,
+          "x": 650,
+          "y": 390,
+          "zOrder": 110,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "locked": false,
+          "name": "BossResult",
+          "persistentUuid": "learnquest-bossresult-v16",
+          "width": 0,
+          "x": 380,
+          "y": 475,
+          "zOrder": 110,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "locked": false,
+          "name": "ValleyBadge",
+          "persistentUuid": "learnquest-valleybadge-v16",
+          "width": 0,
+          "x": 430,
+          "y": 540,
+          "zOrder": 110,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -5168,6 +5308,166 @@
             "g": 60,
             "b": 60
           }
+        },
+        {
+          "bold": true,
+          "italic": false,
+          "name": "BossTitle",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "⚔️ NUMBER GATE CHALLENGE",
+          "font": "",
+          "characterSize": 32,
+          "color": {
+            "r": 120,
+            "g": 45,
+            "b": 25
+          }
+        },
+        {
+          "bold": true,
+          "italic": false,
+          "name": "BossQuestion",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "A bridge has 6 rows of 8 stones. How many stones altogether?",
+          "font": "",
+          "characterSize": 30,
+          "color": {
+            "r": 25,
+            "g": 25,
+            "b": 25
+          }
+        },
+        {
+          "bold": true,
+          "italic": false,
+          "name": "BossA",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "A. 42",
+          "font": "",
+          "characterSize": 28,
+          "color": {
+            "r": 40,
+            "g": 40,
+            "b": 40
+          }
+        },
+        {
+          "bold": true,
+          "italic": false,
+          "name": "BossB",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "B. 48",
+          "font": "",
+          "characterSize": 28,
+          "color": {
+            "r": 25,
+            "g": 100,
+            "b": 45
+          }
+        },
+        {
+          "bold": true,
+          "italic": false,
+          "name": "BossC",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "C. 54",
+          "font": "",
+          "characterSize": 28,
+          "color": {
+            "r": 40,
+            "g": 40,
+            "b": 40
+          }
+        },
+        {
+          "bold": true,
+          "italic": false,
+          "name": "BossD",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "D. 56",
+          "font": "",
+          "characterSize": 28,
+          "color": {
+            "r": 40,
+            "g": 40,
+            "b": 40
+          }
+        },
+        {
+          "bold": true,
+          "italic": false,
+          "name": "BossResult",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Solve the challenge to master Number Valley.",
+          "font": "",
+          "characterSize": 24,
+          "color": {
+            "r": 65,
+            "g": 65,
+            "b": 65
+          }
+        },
+        {
+          "bold": true,
+          "italic": false,
+          "name": "ValleyBadge",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "",
+          "font": "",
+          "characterSize": 28,
+          "color": {
+            "r": 125,
+            "g": 85,
+            "b": 10
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -5196,6 +5496,106 @@
         ]
       },
       "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SceneJustBegins"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Hide"
+              },
+              "parameters": [
+                "BossTitle"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Hide"
+              },
+              "parameters": [
+                "BossQuestion"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Hide"
+              },
+              "parameters": [
+                "BossA"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Hide"
+              },
+              "parameters": [
+                "BossB"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Hide"
+              },
+              "parameters": [
+                "BossC"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Hide"
+              },
+              "parameters": [
+                "BossD"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Hide"
+              },
+              "parameters": [
+                "BossResult"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Hide"
+              },
+              "parameters": [
+                "ValleyBadge"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
@@ -5676,6 +6076,418 @@
                 "ValleyMission",
                 "=",
                 "2"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Show"
+              },
+              "parameters": [
+                "BossTitle"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Show"
+              },
+              "parameters": [
+                "BossQuestion"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Show"
+              },
+              "parameters": [
+                "BossA"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Show"
+              },
+              "parameters": [
+                "BossB"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Show"
+              },
+              "parameters": [
+                "BossC"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Show"
+              },
+              "parameters": [
+                "BossD"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Show"
+              },
+              "parameters": [
+                "BossResult"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "IsCursorOnObject"
+              },
+              "parameters": [
+                "BossB",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonReleased"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "ValleyMission",
+                "=",
+                "2"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "XP",
+                "=",
+                "500"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "Coins",
+                "=",
+                "200"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "ValleyMission",
+                "=",
+                "3"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "NVHUD",
+                "=",
+                "\"⭐ XP: 500     🪙 Coins: 200     💎 Crystals: 3/3\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "BossResult",
+                "=",
+                "\"Correct! 6 × 8 = 48. Number Valley mastered!\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "ValleyBadge",
+                "=",
+                "\"🏆 NUMBER MASTER BADGE UNLOCKED\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Show"
+              },
+              "parameters": [
+                "ValleyBadge"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Hide"
+              },
+              "parameters": [
+                "BossA"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Hide"
+              },
+              "parameters": [
+                "BossB"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Hide"
+              },
+              "parameters": [
+                "BossC"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Hide"
+              },
+              "parameters": [
+                "BossD"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "IsCursorOnObject"
+              },
+              "parameters": [
+                "BossA",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonReleased"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "ValleyMission",
+                "=",
+                "2"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "BossResult",
+                "=",
+                "\"Not quite. Think: 8 + 8 + 8 + 8 + 8 + 8.\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "IsCursorOnObject"
+              },
+              "parameters": [
+                "BossC",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonReleased"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "ValleyMission",
+                "=",
+                "2"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "BossResult",
+                "=",
+                "\"Not quite. Think: 8 + 8 + 8 + 8 + 8 + 8.\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "IsCursorOnObject"
+              },
+              "parameters": [
+                "BossD",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonReleased"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "ValleyMission",
+                "=",
+                "2"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "BossResult",
+                "=",
+                "\"Not quite. Think: 8 + 8 + 8 + 8 + 8 + 8.\""
               ],
               "subInstructions": []
             }
