@@ -18,9 +18,9 @@
     "scaleMode": "linear",
     "sizeOnStartupMode": "",
     "templateSlug": "starting-top-down",
-    "version": "2.0.1",
+    "version": "2.1.0",
     "name": "LEARNQUEST",
-    "description": "Mission card rendering fixed using Shape Painter draw action; dynamic text remains separated and readable.",
+    "description": "Mission UI rebuilt on dedicated UI layer using persistent Shape Painter card object; player moved out of quiz area.",
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
@@ -345,8 +345,8 @@
           "name": "Player",
           "persistentUuid": "ebd4e918-fdc8-4c06-baef-2e0f46c2cfd5",
           "width": 52,
-          "x": 610,
-          "y": 455,
+          "x": 560,
+          "y": 570,
           "zOrder": 35,
           "numberProperties": [],
           "stringProperties": [],
@@ -689,7 +689,7 @@
           "name": "MissionPrompt",
           "persistentUuid": "9f4578db-5f9c-4932-81ab-bd3d31b8cfd9",
           "width": 0,
-          "x": 390,
+          "x": 370,
           "y": 145,
           "zOrder": 110,
           "numberProperties": [],
@@ -705,7 +705,7 @@
           "name": "Question",
           "persistentUuid": "6c17b7dc-6949-47d6-828c-b10e8248e69b",
           "width": 0,
-          "x": 400,
+          "x": 390,
           "y": 210,
           "zOrder": 110,
           "numberProperties": [],
@@ -721,8 +721,8 @@
           "name": "AnswerA",
           "persistentUuid": "81c0f540-1c49-4ce2-a424-17e7cf95793f",
           "width": 0,
-          "x": 405,
-          "y": 290,
+          "x": 410,
+          "y": 285,
           "zOrder": 110,
           "numberProperties": [],
           "stringProperties": [],
@@ -737,7 +737,7 @@
           "name": "AnswerB",
           "persistentUuid": "ee33945f-1cfd-4c9e-94dc-e6127f7072b2",
           "width": 0,
-          "x": 405,
+          "x": 410,
           "y": 350,
           "zOrder": 110,
           "numberProperties": [],
@@ -754,7 +754,7 @@
           "persistentUuid": "ce8ec0d8-906e-4e17-8619-5537dbbd13f4",
           "width": 0,
           "x": 690,
-          "y": 290,
+          "y": 285,
           "zOrder": 110,
           "numberProperties": [],
           "stringProperties": [],
@@ -785,7 +785,7 @@
           "name": "Feedback",
           "persistentUuid": "bc956ff0-f2d9-469c-8d70-018e983c3a8c",
           "width": 0,
-          "x": 400,
+          "x": 390,
           "y": 415,
           "zOrder": 110,
           "numberProperties": [],
@@ -833,7 +833,7 @@
           "name": "Mission2Info",
           "persistentUuid": "learnquest-mission2info-m2",
           "width": 0,
-          "x": 390,
+          "x": 370,
           "y": 145,
           "zOrder": 110,
           "numberProperties": [],
@@ -865,7 +865,7 @@
           "name": "Mission3Info",
           "persistentUuid": "learnquest-mission3info-m3",
           "width": 0,
-          "x": 390,
+          "x": 370,
           "y": 145,
           "zOrder": 110,
           "numberProperties": [],
@@ -1072,14 +1072,14 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 440,
+          "height": 455,
           "layer": "UI",
           "locked": false,
           "name": "MissionCard",
           "persistentUuid": "mission-card-clean-v2",
-          "width": 760,
-          "x": 260,
-          "y": 115,
+          "width": 780,
+          "x": 250,
+          "y": 110,
           "zOrder": 90,
           "numberProperties": [],
           "stringProperties": [],
@@ -2131,12 +2131,12 @@
           "effects": [],
           "behaviors": [],
           "fillOpacity": 235,
-          "outlineSize": 4,
+          "outlineSize": 5,
           "outlineOpacity": 255,
           "fillColor": {
             "r": 255,
-            "g": 244,
-            "b": 210
+            "g": 248,
+            "b": 225
           },
           "outlineColor": {
             "r": 116,
@@ -2485,6 +2485,16 @@
                 "Bridge"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Hide"
+              },
+              "parameters": [
+                "MissionCard"
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -2523,18 +2533,10 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ShapePainter::DrawRectangle"
+                "value": "Show"
               },
               "parameters": [
-                "MissionCard",
-                "260",
-                "115",
-                "1020",
-                "555",
-                "\"255;248;225\"",
-                "230",
-                "\"116;66;26\"",
-                "5"
+                "MissionCard"
               ],
               "subInstructions": []
             },
@@ -2973,18 +2975,10 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ShapePainter::DrawRectangle"
+                "value": "Show"
               },
               "parameters": [
-                "MissionCard",
-                "260",
-                "115",
-                "1020",
-                "555",
-                "\"255;248;225\"",
-                "230",
-                "\"116;66;26\"",
-                "5"
+                "MissionCard"
               ],
               "subInstructions": []
             },
@@ -3599,18 +3593,10 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ShapePainter::DrawRectangle"
+                "value": "Show"
               },
               "parameters": [
-                "MissionCard",
-                "260",
-                "115",
-                "1020",
-                "555",
-                "\"255;248;225\"",
-                "230",
-                "\"116;66;26\"",
-                "5"
+                "MissionCard"
               ],
               "subInstructions": []
             },
