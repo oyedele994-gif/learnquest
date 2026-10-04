@@ -18,9 +18,9 @@
     "scaleMode": "linear",
     "sizeOnStartupMode": "",
     "templateSlug": "starting-top-down",
-    "version": "1.7.0",
+    "version": "1.7.1",
     "name": "LEARNQUEST",
-    "description": "LEARNQUEST visual upgrade: Knowledge Village and Number Valley now use custom illustrated game assets.",
+    "description": "LEARNQUEST visual integration fix: custom artwork moved above starter scene layers for editor and preview visibility.",
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
@@ -996,7 +996,7 @@
           "width": 1280,
           "x": 0,
           "y": 0,
-          "zOrder": -10,
+          "zOrder": 10,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1013,7 +1013,7 @@
           "width": 150,
           "x": 110,
           "y": 170,
-          "zOrder": 8,
+          "zOrder": 28,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1030,7 +1030,7 @@
           "width": 250,
           "x": 880,
           "y": 250,
-          "zOrder": 7,
+          "zOrder": 27,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1047,7 +1047,7 @@
           "width": 190,
           "x": 820,
           "y": 430,
-          "zOrder": 9,
+          "zOrder": 29,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1064,7 +1064,7 @@
           "width": 180,
           "x": 1010,
           "y": 90,
-          "zOrder": 9,
+          "zOrder": 29,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -5202,7 +5202,7 @@
           "width": 1280,
           "x": 0,
           "y": 0,
-          "zOrder": -10,
+          "zOrder": 10,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -5219,7 +5219,7 @@
           "width": 150,
           "x": 120,
           "y": 170,
-          "zOrder": 8,
+          "zOrder": 28,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -5236,7 +5236,7 @@
           "width": 230,
           "x": 760,
           "y": 280,
-          "zOrder": 8,
+          "zOrder": 28,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -5253,7 +5253,7 @@
           "width": 180,
           "x": 950,
           "y": 90,
-          "zOrder": 8,
+          "zOrder": 28,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
